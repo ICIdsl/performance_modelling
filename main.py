@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from perf4sight.create_network_dataset import create_dataset
+import perf4sight
 
 def parse_command_line_args() : 
 #{{{
@@ -36,6 +36,7 @@ def parse_config_file(configFile):
             # params.pruner as an object
             self.pruner = dict(configFile['create_network_dataset']) if 'create_network_dataset' in\
                     configFile.sections() else None
+            self.profile = dict(configFile['profile']) if 'profile' in configFile.sections() else None
             self.fingerprint = dict(configFile['fingerprint']) if 'fingerprint' in configFile.sections()\
                     else None
 
@@ -51,10 +52,13 @@ def main():
     params = parse_config_file(config)
 
     if params.pruner is not None:
-        create_dataset(params)
+        perf4sight.create_dataset(params)
+
+    if params.profile is not None:
+        perf4sight.profile_network(params)
 
     if params.fingerprint is not None:
-        fingerprinter.fingerprint_device(params)
+        fingerprint_device(params)
 #}}}
 
 if __name__ == '__main__':

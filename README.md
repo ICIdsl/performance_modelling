@@ -26,3 +26,6 @@ This prunes a all the networks specified in the **create_network_dataset** secti
 Refer to the README in perf4sight/pruners on how to prune a custom model.
 Decorators need to be placed on the model description file in order to do so.
 
+## perf4sight/profiling
+This performs the profiling on the target device and is controlled by the parameters in the [profile] section of the *config.ini*.
+

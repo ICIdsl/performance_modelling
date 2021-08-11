@@ -22,7 +22,7 @@ This repo is just a wrapper around the perf4sight repo which implements the actu
 
 ### perf4sight/create_network_dataset.py
 This prunes a all the networks specified in the **create_network_dataset** section of config.ini and stores them in *[model_path]/imagenet*.
-[model_desc_dir] is the location on your machine where the model description files are stored.
+*[model_desc_dir]* is the location on your machine where the model description files are stored.
 Refer to the README in perf4sight/pruners on how to prune a custom model.
 Decorators need to be placed on the model description file in order to do so.
 

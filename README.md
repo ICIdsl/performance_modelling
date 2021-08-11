@@ -27,5 +27,6 @@ Refer to the README in perf4sight/pruners on how to prune a custom model.
 Decorators need to be placed on the model description file in order to do so.
 
 ## perf4sight/profiling
-This performs the profiling on the target device and is controlled by the parameters in the [profile] section of the *config.ini*.
-
+This performs the profiling on the target device and is controlled by the parameters in the **profile** section of the *config.ini*.
+The *create_config* part of the section can be run on any machine and creates a config file in a format understood by the profilers present in *perf4sight/profiling/tx2/*
+and *perf4sight/profiling/2080ti*.

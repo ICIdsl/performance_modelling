@@ -39,7 +39,7 @@ should be copied over to the location specified in *[test_config]* on the target
 The *run_profiling* section has to be run on the target device and the resulting data will be stored in *[log_dir]* on the target device.
 The *[till_first_fail]* option causes the profiler to stop profiling after the first network configuration that can't be run on that device without running out of memory.
 
-> IMPORTANT: In order to run this, the environment variable *CUDA_VISIBLE_DEVICES* and *PROFILING* needs to be set. 
+> IMPORTANT: In order to run profiling, the environment variable *CUDA_VISIBLE_DEVICES* and *PROFILING* needs to be set. 
 
 `CUDA_VISIBLE_DEVICES='0,1' PROFILING=1 python main.py --config-file config.ini` 
 

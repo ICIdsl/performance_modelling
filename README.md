@@ -17,4 +17,6 @@ This repo is just a wrapper around the perf4sight repo which implements the actu
 - **main.py** implements the basic interface that reads the configurations from the **config.ini** file and calls the relevant functions within perf4sight.
 - **models/imagenet** contains various PyTorch model description files 
 - **models/pruned** contains the pruned versions of the models that were found in **models/imagenet** 
+- **profiling_csvs/** contains csvs with profiled latency and memory consumption for various networks on the Tx2 
+- **fingerprinting/** stores the various performance models that are developed by the tool
 

@@ -210,5 +210,4 @@ dependencies:
     - wrapt==1.11.2
     - xmltodict==0.12.0
     - zipp==3.1.0
-prefix: /home/ar4414/miniconda3/envs/mem_model_1_6
 

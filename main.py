@@ -58,7 +58,7 @@ def main():
         perf4sight.profile_network(params)
 
     if params.fingerprint is not None:
-        fingerprint_device(params)
+        perf4sight.fingerprint_device(params)
 #}}}
 
 if __name__ == '__main__':

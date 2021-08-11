@@ -13,4 +13,8 @@ Add citation
 This will pull the submodules perf4sight and perf4sight/pruners which are required to use the tool. 
 
 ## Usage
+This repo is just a wrapper around the perf4sight repo which implements the actual tool.
+- **main.py** implements the basic interface that reads the configurations from the **config.ini** file and calls the relevant functions within perf4sight.
+- **models/imagenet** contains various PyTorch model description files 
+- **models/pruned** contains the pruned versions of the models that were found in **models/imagenet** 
 

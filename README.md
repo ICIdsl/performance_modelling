@@ -8,7 +8,8 @@ Add citation
 ```
 
 ## Installation 
-`git submodule update --init --recursive`
+`git submodule update --init --recursive` 
+
 This will pull the submodules perf4sight and perf4sight/pruners which are required to use the tool. 
 
 ## Usage

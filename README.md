@@ -19,6 +19,9 @@ This repo is just a wrapper around the perf4sight repo which implements the actu
 - **models/pruned** contains the pruned versions of the models that were found in **models/imagenet** 
 - **profiling_csvs/** contains csvs with profiled latency and memory consumption for various networks on the Tx2 
 - **fingerprinting/** stores the various performance models that are developed by the tool
+- **non_tx2_env.yaml** is the miniconda3 environment required to run the files on this project on a non-arm core (Tx2) device 
+- **tx2_requirements.txt** is the virtual env requirements (to be installed through pip) for running the code on an ARM core device. This requires a special installation of PyTorch, but the rest of the packages can be installed 
+    through pip.
 
 ### perf4sight/create_network_dataset.py
 This prunes a all the networks specified in the **create_network_dataset** section of config.ini and stores them in *[model_path]/imagenet*.

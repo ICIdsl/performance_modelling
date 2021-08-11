@@ -30,3 +30,11 @@ Decorators need to be placed on the model description file in order to do so.
 This performs the profiling on the target device and is controlled by the parameters in the **profile** section of the *config.ini*.
 The *create_config* part of the section can be run on any machine and creates a config file in a format understood by the profilers present in *perf4sight/profiling/tx2/*
 and *perf4sight/profiling/2080ti*.
+The config files are created in *perf4sight/profiling/profiling_configs*.
+The *[device_model_loc]* parameter is a path to the model description files that are found in *[local_model_loc]* but on the target device.
+
+Following this step, the model description files need to be copied over to the location in *[device_model_loc]* on the target device, and the generated test config
+should be copied over to the location specified in *[test_config]* on the target device.
+
+The *run_profiling* section has to be run on the target device and the resulting data will be stored in *[log_dir]* on the target device.
+The *[till_first_fail]* option causes the profiler to stop profiling after the first network configuration that can't be run on that device without running out of memory.

@@ -20,3 +20,5 @@ This repo is just a wrapper around the perf4sight repo which implements the actu
 - **profiling_csvs/** contains csvs with profiled latency and memory consumption for various networks on the Tx2 
 - **fingerprinting/** stores the various performance models that are developed by the tool
 
+The README.md inside the perf4sight repository details the various terms that are found in config file.
+

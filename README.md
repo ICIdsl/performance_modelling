@@ -38,3 +38,10 @@ should be copied over to the location specified in *[test_config]* on the target
 
 The *run_profiling* section has to be run on the target device and the resulting data will be stored in *[log_dir]* on the target device.
 The *[till_first_fail]* option causes the profiler to stop profiling after the first network configuration that can't be run on that device without running out of memory.
+
+## perf4sight/fingerprinting
+This performs the modelling using decision trees and is controlled by the parameters in **fingerprint** in *config.ini*.
+The csvs with profiled data that were generated on the target device should be copied to the paths specified in *[memory_logs]* and *[latency_logs]*. 
+This repo has profiling csvs for the training stage for a range of networks on the NVIDIA Jetson TX2. 
+When training, data from all the networks present in the list of *[train_nets]* is used and like wise with the evaluation. 
+The *[eval_memory_logs]* section is only relevant if the location of the profiling csvs used to train the decision tree is different from those used to test it.
